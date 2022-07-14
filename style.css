@@ -5,18 +5,42 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
+a {
+    text-decoration: none;
+}
+.titleTeam{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #161623;
+    background: #040b14;
     min-height: 100vh;
 }
 
 section {
+    width: 100%;
+    height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0px;
 }
+
+.titleTeam {
+    z-index: 100;
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1rem;
+}
+
 section::before {
     content: "";
     position: absolute;
@@ -25,7 +49,7 @@ section::before {
     width: 100%;
     height: 100%;
     background: linear-gradient(#f00, #f0f);
-    clip-path: circle(15% at right 80%);
+    clip-path: circle(30% at right 80%);
     opacity: 0.4;
 }
 section::after {
@@ -46,7 +70,7 @@ section::after {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 100px 100px;
+    margin: 30px 0px;
 }
 .container .card {
     position: relative;
@@ -83,7 +107,7 @@ section::after {
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    border: 10px solid rgba(0, 0, 0, 0.25);
+    border: 8px solid rgba(122, 120, 120, 0.25);
 }
 .container .card .content .imgBx img {
     position: absolute;
